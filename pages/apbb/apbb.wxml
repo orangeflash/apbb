@@ -1,0 +1,73 @@
+
+<!--pages/apbb/apbb.wxml-->
+
+<!--轮播图-->
+<swiper style="height:250px" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{bannerItems}}">
+    <swiper-item>
+      <navigator url="url">
+        <image src="{{item.imgUrl}}" style="width:100%"></image>
+      </navigator>
+    </swiper-item>
+  </block>
+</swiper>
+
+<!--活动板块activity start-->
+
+<!--<view class="imglist">
+  <navigator url="../rp/rp" open-type="switchTab">
+    <image style="width:{{sbwidth*0.4}}px" src="{{activityUrls[0]}}"></image>
+  </navigator>
+  <navigator url="../activity/tenGroup/tenGroup">
+    <image style="width:{{sbwidth*0.58+1}}px;height:{{sbwidth*0.6/2.3}}px;position:absolute;top:0" src="{{activityUrls[1]}}"></image>
+  </navigator>
+  <navigator url="../activity/discount/discount">
+    <image style="width:{{sbwidth*0.28}}px;height:{{sbwidth*0.6/1.6}}px" src="{{activityUrls[2]}}"></image>
+  </navigator>
+  <navigator url="../activity/lists/lists">
+    <image style="width:{{sbwidth*0.29}}px;height:{{sbwidth*0.6/1.6}}px" src="{{activityUrls[3]}}"></image>
+  </navigator>
+</view>-->
+<view class="home-hot">
+  <navigator class="hot-left" url="../rp/rp">
+    <image src="{{activityUrls[0]}}"></image>
+  </navigator>
+  <view class="hot-right">
+    <navigator class="hot-right-top" url="../activity/tenGroup/tenGroup">
+      <image src="{{activityUrls[1]}}"></image>
+    </navigator>
+    <view class="hot-right-btm">
+      <navigator class="hot-right-btm-left" url="../activity/discount/discount">
+        <image src="{{activityUrls[2]}}"></image>
+      </navigator>
+      <navigator class="hot-right-btm-right" url="../activity/lists/lists">
+        <image src="{{activityUrls[3]}}"></image>
+      </navigator>
+    </view>
+  </view>
+</view>
+
+<!--navbar选项卡板块-->
+<view class="navbar-box" id="navbar-box">
+  <scroll-view class="navbar scroll-view_H{{fixed?fixed:''}}" scroll-x="true" style="width:100%">
+    <navigator wx:for="{{navItems}}" wx:key="" class="{{bindindex==index?'textline':''}}" data-tabIndex="{{item.tabIndex}}" data-category="{{item.category}}" data-index="{{index}}" bindtap="navLink">{{item.text}}</navigator>
+  </scroll-view>
+</view>
+
+<!--list start-->
+<view class="lists-box">
+  <navigator url="../component/detail/detail?id={{item.goods_id}}" wx:for="{{list}}" wx:key="" class="item-box">
+    <view class="item-img">
+      <image src="{{item.goods_img}}" mode="aspectFill"></image>
+    </view>
+    <text class="item-title">{{item.goods_title}}</text>
+    <text class="item-content">{{item.goods_promote_info}}</text>
+    <view class="item-btm">
+      <view class="item-buy-people">
+        <view class="iconfont icon-people"></view>
+        {{item.goods_group_size}}人团
+      </view>
+      <view class="item-price">￥{{item.goods_group_price}}</view>
+    </view>
+  </navigator>
+</view>

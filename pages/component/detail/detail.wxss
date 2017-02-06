@@ -1,0 +1,206 @@
+/* pages/component/detail/detail.wxss */
+
+/*page {
+  background-color: white;
+}*/
+
+.detail-img-box {
+  height: 700rpx;
+}
+
+.detail-box {
+  background-color: white;
+  position: relative;
+}
+
+.detail-content {
+  position: relative;
+}
+
+.detail-price {
+  font-size: 40rpx;
+}
+
+.detail-price .new-price {
+  color: red;
+}
+
+.detail-price .odd-price {
+  color: gray;
+  font-size: 25rpx;
+  text-decoration: line-through;
+  margin-left: 20rpx;
+}
+
+.detail-other {
+  position: absolute;
+  right: 30rpx;
+  bottom: 5rpx;
+  font-size: 25rpx;
+  opacity: 0.5;
+}
+
+.otherAddress {
+  font-size: 35rpx;
+  font-family: 楷体;
+  background-color: gainsboro;
+}
+
+/*三角角标*/
+
+/*.icon-img{
+    width: 0rpx;
+    height: 0rpx;
+    color: gainsboro;
+    border: 20rpx solid white;
+    border-bottom-color: gainsboro;
+    position: absolute;
+    left: 60rpx;
+    top: 110rpx;
+}*/
+
+.icon-img {
+  position: absolute;
+  bottom: 0;
+  left: 60rpx;
+  display: block;
+  width: 20rpx;
+  height: 20rpx;
+  -webkit-transform: rotate(45deg) translate(0, 70%);
+  -moz-transform: rotate(45deg) translate(0, 70%);
+  transform: rotate(45deg) translate(0, 70%);
+  background-color: gainsboro;
+}
+
+/*拼团模块*/
+.groud-play-box{
+  height: 200rpx;
+  background-color:white;
+}
+.group-play-content {
+  display: flex;
+  width: 100%;
+}
+/*让文本占一行*/
+.group-play-content text{
+  display: flex;
+  flex: 1;
+}
+/*居中*/
+.group-play-item {
+  margin-top: 40rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 33%;
+  font-size: 20rpx;
+  align-items: center;
+}
+/*内边距*/
+.group-play-img {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  background-color: gray;
+  margin-right: 15rpx;
+}
+.fight-group-title{
+  background-color: gainsboro;
+  text-align: center;
+  color: red;
+  font-size: 30rpx;
+  font-family: 楷体;
+  height: 100rpx;
+  line-height: 100rpx
+}
+/*抢团模块*/
+.fight-group{
+  background-color: white;
+}
+.title-box{
+  margin-left:20rpx;
+}
+/*.bordrer-top{
+  border-top: 2rpx solid gainsboro;
+  border-bottom: 2rpx solid gainsboro;
+}*/
+.item-group{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  margin: 20rpx 0;
+}
+.user-img{
+  width: 80rpx;
+  height: 60rpx;
+  display: block;
+  margin-left: 20rpx;
+}
+.group-item-center{
+  font-size: 25rpx;
+  font-family: 楷体;
+  color: gray;
+  margin-left: 15rpx;
+}
+.red-color{
+  color:red;
+}
+.join-group{
+  position: absolute;
+  border-radius: 5px;
+   border: 2rpx solid red;
+   right: 10rpx;
+   font-size: 30rpx;
+   padding: 0 10rpx;
+   font-family: 楷体;
+}
+
+/*商品描述*/
+.goods-detail{
+  background-color: white;
+  margin-top: 20rpx;
+}
+.title-box{
+  border-bottom: 2rpx solid gainsboro;
+}/*文字上下居中 左边有间隙*/
+.goods-detail-text{
+  font-size: 30rpx;
+  font-family: 楷体;
+  margin: 20rpx auto;
+  left: 20rpx;
+  height: 200rpx;
+}
+.goods-detail-img{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+/*购买tips*/
+.buy-tips{
+  background-color: white;
+  margin: 20rpx 0;
+  display: flex;
+  width: 100%;
+  height: 100rpx;
+}
+.buy-tips-item{
+  margin-top: 10rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 33%;
+  font-size: 20rpx;
+  align-items: center;
+}
+.buy-tips-text{
+   font-size: 30rpx;
+   font-family: 楷体;
+}
+.buy-tips-img{
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  background-color: gray;
+  margin-right: 15rpx;
+}

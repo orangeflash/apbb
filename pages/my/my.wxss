@@ -1,0 +1,66 @@
+/* pages/my/my.wxss */
+.user-header{
+    background-color: grey;
+    height: 400rpx;
+    position: relative;
+}
+/*设置left margin-left让其居中*/
+.user-img{
+   background-color: white;
+   width: 150rpx;
+   height: 150rpx;
+   border-radius: 50%;
+   position: absolute;
+   top: 100rpx;
+   left: 50%;
+   margin-left: -75rpx;
+}
+.iconfont{
+  font-size: 100rpx;
+}
+.login-btn{
+    width: 250rpx;
+    position: absolute;
+    border: 2rpx solid white;
+    color: white;
+    top:270rpx;
+    left: 50%;
+    margin-left: -125rpx;
+}
+.user-article{
+    background-color: white;
+    margin-top: 20rpx;
+    height: 250rpx;
+}
+/*字体居中 图标设为display:inline-block*/
+.user-order{
+  position: relative;
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 30rpx;
+  border-bottom: 3rpx solid gainsboro;
+}
+.order-all{
+    position: absolute;
+    left: 20rpx;
+}
+.order-look{
+    position: absolute;
+    right: 50rpx;
+}
+/*流动布局*/
+.order-class{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.item-order{
+    width: 20%;
+    font-size: 20rpx;
+    text-align: center;
+}
+/*设置图标大小 透明度*/
+.item-order .iconfont{
+    font-size: 80rpx;
+    opacity: 0.5;
+}
